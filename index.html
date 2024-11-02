@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Profile </title>
+    <link rel="icon" href="pf.jpg">
+    <style>
+        body{
+            width: 100%;
+            padding: 0px ;
+            margin: 0px;
+        }
+
+        section{
+           height: 683px; 
+
+        }
+       
+        #div{
+            width: 100%;
+            padding: auto ;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        .profile{
+            height: 200px;
+            padding: 10px;
+            
+        }
+        .title{
+            height: 75px;
+            background-color: rgb(253, 253, 254);
+        }
+        .about{
+            height: 130px;
+            background-color: yellow;
+            text-align: justify;
+            padding: 10px;
+            
+        }
+        .s_media{
+            height: 110px;
+            background-color: rgb(34, 255, 0);
+            padding: 5px;
+            box-align: center;
+        }
+
+        .p_photo{
+            width: 200px;
+            height: 198px;
+            background-image: url(pf.jpg);
+            background-size: cover;
+            border-image-repeat: no repeat;
+            margin:  auto;
+            border-width: 5px;
+            border-color: red yellow rgb(10, 255,   235) rgb(200, 0, 255) ;
+            border-style: dashed ;
+            border-radius: 100%;
+            box-shadow: 2px 0px 20px  hwb(237 0% 2%) ;
+            animation: pbcolor  10s infinite ;
+        }
+
+        @keyframes pbcolor{
+            
+             0%{ border-color: red yellow rgb(10, 255,   235) rgb(210, 47, 255) ; }
+            10%{ border-color: rgb(210, 47 , 255) red yellow rgb(10, 255, 235) ; }
+            20%{ border-color: rgb(10, 255, 235) rgb(210, 47, 255) red yellow }
+            30%{ border-color: yellow rgb(10, 255,   235)  rgb(210, 47, 255) red ;}
+
+            40%{ border-color: red yellow rgb(10, 255,   235) rgb(210, 47, 255) ; }
+            50%{ border-color: rgb(210, 47 , 255) red yellow rgb(10, 255, 235) ;  }
+            60%{ border-color: rgb(10, 255, 235) rgb(210, 47, 255) red yellow ;}
+            70%{ border-color:  yellow rgb(10, 255,   235)  rgb(210, 47, 255) red ; }
+
+            80%{ border-color: red yellow rgb(10, 255,   235) rgb(210, 47, 255) ; }
+            90%{ border-color: rgb(210, 47 , 255) red yellow rgb(10, 255, 235) ;  }
+            100%{ border-color: rgb(10, 255, 235) rgb(210, 47, 255) red yellow ; }
+          
+        }
+
+        .name{
+            color: rgb(0, 0, 0) ;
+            padding-top: 5PX;
+        }
+        .subname{
+            margin-top: -40px;
+            color: rgb(0, 106, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        footer{
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            background-color: black;
+            padding-top: 15px;
+            
+        }
+
+        p1{
+            color: azure ;
+            margin: 10px auto;
+            font-size: 13px;
+        }
+
+        h3{
+            margin: auto;
+            color: red;
+        }
+
+        hr{
+            width: 40%;
+            height: 2px;
+            background-color: blueviolet;
+            margin-top: 0;
+            margin-bottom: 10px;
+           
+        }
+
+       #smb{
+        width: 65px ;
+        height: 65px;
+        float: left;
+        margin-left: 10px;
+       
+       }
+       
+    #smbs{
+        width: 65px ;
+        height: 65px;
+        float: right;
+        margin-right: 10px;
+    }  
+
+    #smbi{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .thanks{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 40px;
+        color: rgb(254, 0, 0);
+        font-weight: bold;
+        font-size: 20px;
+        animation: thank 5s infinite;
+    }
+
+    @keyframes thank{
+         0%{ color:red; }
+        10%{ color:green ; }
+        20%{ color:blue ; }
+        30%{ color:lightsalmon ; }
+        40%{ color:lightseagreen ; }
+        50%{ color:rgb(200, 0, 255); }
+        60%{ color:rgb(3, 218, 247) ; }
+        70%{ color:green; }
+        80%{ color:violet ; }
+        90%{ color:brown; }
+       100%{ color:mediumspringgreen ; }
+        
+    }
+
+    </style>
+
+</head>
+<body>
+    <section>
+
+    <div class="profile">
+        <nav class="p_photo"> </nav>
+    </div>
+
+    <div class="title"> 
+       <center> <h1  class="name"> NAME: RAJ KUMAR </h1><br>
+                <h4 class="subname"> Frontend and Backend Web-Development </h4>
+       </center> 
+    </div>
+
+    <div class="about"> <i>Hello Guys</i><br> My name is Raj Kumar from <b>SUPAUL, BIHAR</b> . I am Completed Matriculation from BSEB with 89% marks.Then I Completed Intermediate from BSEB with 74% marks.
+        Now I am pursuring BTech Degree from <b>'PURNEA COLLEGE OF ENGINEERING'</b> in department of CSE( Artificial Intelligence ) .
+    </div>
+
+    <div class="s_media">
+        <center><h3> OUR SOCIAL-MEDIA </h3> </center>
+         <hr>
+
+       <a href="#"> <nav id="smb" > <img src="fb.png" alt="" id="smbi"> </nav> </a>
+       <a href="#"> <nav id="smb"> <img src="yt.png" alt="" id="smbi"> </nav> </a>
+
+       <a href="#"> <nav id="smbs"> <img src="insta.png" alt="" id="smbi"> </nav> </a>
+       <a href="#"> <nav id="smbs"> <img src="link.png" alt="" id="smbi"> </nav> </a>
+
+    </div>
+
+    <center> <p class="thanks"> Thank You </p> </center>
+
+</section>  
+
+    <footer>
+      <center> <p1> @copyright: 2024Motivationzilla.com ------ Devloped By: Raj Kumar  </p></center>      
+    </footer>
+
+</body>
+</html>
